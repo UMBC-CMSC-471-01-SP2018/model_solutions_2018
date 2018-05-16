@@ -1,0 +1,64 @@
+Testing 2x2 problem
+2 Solving 0011 => 0000 optimal
+Solution of length 2 found
+ 
+2 Solving 0011 => 0000 aggressive
+Solution of length 2 found
+ 
+2 Solving 0111 => 0000 optimal
+Solution of length 1 found
+ 
+2 Solving 0111 => 0000 aggressive
+Solution of length 1 found
+ 
+2 Solving 0001 => 0000 optimal
+Solution of length 3 found
+ 
+2 Solving 0001 => 0000 aggressive
+Solution of length 3 found
+ 
+2 Solving 0100 => 0000 optimal
+Solution of length 3 found
+ 
+2 Solving 0100 => 0000 aggressive
+Solution of length 3 found
+ 
+Testing 3x3 problem
+3 Solving 011100010 => 000000000 optimal
+Solution of length 7 found
+ 
+3 Solving 011100010 => 000000000 aggressive
+Solution of length 7 found
+ 
+3 Solving 000100010 => 000000000 optimal
+Solution of length 4 found
+ 
+3 Solving 000100010 => 000000000 aggressive
+Solution of length 4 found
+ 
+3 Solving 001111000 => 000000000 optimal
+Solution of length 4 found
+ 
+3 Solving 001111000 => 000000000 aggressive
+Solution of length 4 found
+ 
+Testing 4x4 problem
+4 Solving 0111100010101001 => 0000000000000000 optimal
+Solution of length 4 found
+ 
+4 Solving 0111100010101001 => 0000000000000000 aggressive
+Solution of length 4 found
+ 
+4 Solving 0000011110110100 => 0000000000000000 optimal
+Solution of length 4 found
+ 
+4 Solving 0000011110110100 => 0000000000000000 aggressive
+Solution of length 4 found
+ 
+Testing 5x5 problem
+5 Solving 1000000110100110101000000 => 0000000000000000000000000 optimal
+Solution of length 4 found
+ 
+5 Solving 1000000110100110101000000 => 0000000000000000000000000 aggressive
+Solution of length 4 found
+ 
