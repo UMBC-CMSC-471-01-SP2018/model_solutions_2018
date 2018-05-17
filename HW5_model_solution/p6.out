@@ -1,0 +1,224 @@
+blackbox version 43
+command line:  blackbox -o hw5_domain.pddl -f p6.pddl
+
+Begin solver specification
+    -maxint        0   -maxsec 0.000000  chaff
+End solver specification
+Loading domain file: hw5_domain.pddl
+Loading fact file: p6.pddl
+Problem name: p6
+Facts loaded.
+time: 1, 72 facts and 62 exclusive pairs.
+time: 2, 92 facts and 449 exclusive pairs.
+time: 3, 99 facts and 493 exclusive pairs.
+time: 4, 131 facts and 1692 exclusive pairs.
+time: 5, 144 facts and 1921 exclusive pairs.
+time: 6, 176 facts and 3495 exclusive pairs.
+time: 7, 184 facts and 2518 exclusive pairs.
+Goals reachable at 7 steps but mutually exclusive.
+time: 8, 184 facts and 1136 exclusive pairs.
+Goals reachable at 8 steps but mutually exclusive.
+time: 9, 184 facts and 808 exclusive pairs.
+Goals reachable at 9 steps but mutually exclusive.
+time: 10, 184 facts and 719 exclusive pairs.
+Goals first reachable in 10 steps.
+4465 nodes created.
+
+####################################################
+goals at time 11:
+  arm-empty color_a_red color_b_green color_c_red on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+** Turning off completeness check **
+Converting graph to wff
+number of action variables = 1706
+number of fluent variables = 755
+total number variables = 2461
+number clauses = 117339
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+time: 11, 184 facts and 719 exclusive pairs.
+617 new nodes added.
+
+####################################################
+goals at time 12:
+  arm-empty color_a_red color_b_green color_c_red on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 2008
+number of fluent variables = 876
+total number variables = 2884
+number clauses = 140945
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 11 steps
+time: 12, 184 facts and 719 exclusive pairs.
+617 new nodes added.
+
+####################################################
+goals at time 13:
+  arm-empty color_a_red color_b_green color_c_red on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 2310
+number of fluent variables = 997
+total number variables = 3307
+number clauses = 164239
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 12 steps
+time: 13, 184 facts and 719 exclusive pairs.
+617 new nodes added.
+
+####################################################
+goals at time 14:
+  arm-empty color_a_red color_b_green color_c_red on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 2612
+number of fluent variables = 1118
+total number variables = 3730
+number clauses = 187517
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 13 steps
+time: 14, 184 facts and 719 exclusive pairs.
+617 new nodes added.
+
+####################################################
+goals at time 15:
+  arm-empty color_a_red color_b_green color_c_red on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 2914
+number of fluent variables = 1239
+total number variables = 4153
+number clauses = 210795
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 14 steps
+time: 15, 184 facts and 719 exclusive pairs.
+617 new nodes added.
+
+####################################################
+goals at time 16:
+  arm-empty color_a_red color_b_green color_c_red on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 3216
+number of fluent variables = 1360
+total number variables = 4576
+number clauses = 234073
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 15 steps
+time: 16, 184 facts and 719 exclusive pairs.
+617 new nodes added.
+
+####################################################
+goals at time 17:
+  arm-empty color_a_red color_b_green color_c_red on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 3518
+number of fluent variables = 1481
+total number variables = 4999
+number clauses = 257351
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 16 steps
+time: 17, 184 facts and 719 exclusive pairs.
+617 new nodes added.
+
+####################################################
+goals at time 18:
+  arm-empty color_a_red color_b_green color_c_red on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 3820
+number of fluent variables = 1602
+total number variables = 5422
+number clauses = 280629
+Result is Sat
+Iteration was 0
+Performing plan justification:
+   0 actions were pruned in 0.00 seconds
+
+----------------------------------------------------
+Begin plan
+1 (unstack c b)
+2 (put-down c)
+3 (unstack b a)
+4 (put-down b)
+5 (remove-can-lid c1 red)
+5 (remove-can-lid c2 green)
+6 (unstack b1 b2)
+7 (load-brush b1 c2 green)
+8 (paint b green b1)
+9 (stack b1 c2)
+10 (unstack b2 b3)
+11 (load-brush b2 c1 red)
+12 (paint c red b2)
+12 (paint a red b2)
+13 (put-down b2)
+14 (pick-up b)
+15 (stack b c)
+16 (pick-up a)
+17 (stack a b)
+End plan
+----------------------------------------------------
+
+19 total actions in plan
+0 entries in hash table, 
+16 total set-creation steps (entries + hits + plan length - 1)
+0 actions tried
+
+####################################################
+Total elapsed time:   2.39 seconds
+Time in milliseconds: 2395
+
+####################################################

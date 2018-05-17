@@ -1,0 +1,198 @@
+blackbox version 43
+command line:  blackbox -o hw5_domain.pddl -f p3.pddl
+
+Begin solver specification
+    -maxint        0   -maxsec 0.000000  chaff
+End solver specification
+Loading domain file: hw5_domain.pddl
+Loading fact file: p3.pddl
+Problem name: p3
+Facts loaded.
+time: 1, 67 facts and 79 exclusive pairs.
+time: 2, 123 facts and 2323 exclusive pairs.
+time: 3, 126 facts and 2026 exclusive pairs.
+time: 4, 147 facts and 2329 exclusive pairs.
+Goals reachable at 4 steps but mutually exclusive.
+time: 5, 147 facts and 1534 exclusive pairs.
+Goals reachable at 5 steps but mutually exclusive.
+time: 6, 147 facts and 1285 exclusive pairs.
+Goals reachable at 6 steps but mutually exclusive.
+time: 7, 147 facts and 649 exclusive pairs.
+Goals first reachable in 7 steps.
+2646 nodes created.
+
+####################################################
+goals at time 8:
+  arm-empty color_a_red color_b_blue color_c_green clean_brush1 
+bbunopen_can1 bbunopen_can2 bbunopen_can3 
+
+
+----------------------------------------------------
+** Turning off completeness check **
+Converting graph to wff
+number of action variables = 1125
+number of fluent variables = 496
+total number variables = 1621
+number clauses = 77778
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+time: 8, 147 facts and 649 exclusive pairs.
+455 new nodes added.
+
+####################################################
+goals at time 9:
+  arm-empty color_a_red color_b_blue color_c_green clean_brush1 
+bbunopen_can1 bbunopen_can2 bbunopen_can3 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 1367
+number of fluent variables = 595
+total number variables = 1962
+number clauses = 93779
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 8 steps
+time: 9, 147 facts and 649 exclusive pairs.
+455 new nodes added.
+
+####################################################
+goals at time 10:
+  arm-empty color_a_red color_b_blue color_c_green clean_brush1 
+bbunopen_can1 bbunopen_can2 bbunopen_can3 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 1609
+number of fluent variables = 694
+total number variables = 2303
+number clauses = 109636
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 9 steps
+time: 10, 147 facts and 649 exclusive pairs.
+455 new nodes added.
+
+####################################################
+goals at time 11:
+  arm-empty color_a_red color_b_blue color_c_green clean_brush1 
+bbunopen_can1 bbunopen_can2 bbunopen_can3 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 1851
+number of fluent variables = 793
+total number variables = 2644
+number clauses = 125421
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 10 steps
+time: 11, 147 facts and 649 exclusive pairs.
+455 new nodes added.
+
+####################################################
+goals at time 12:
+  arm-empty color_a_red color_b_blue color_c_green clean_brush1 
+bbunopen_can1 bbunopen_can2 bbunopen_can3 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 2093
+number of fluent variables = 892
+total number variables = 2985
+number clauses = 141206
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 11 steps
+time: 12, 147 facts and 649 exclusive pairs.
+455 new nodes added.
+
+####################################################
+goals at time 13:
+  arm-empty color_a_red color_b_blue color_c_green clean_brush1 
+bbunopen_can1 bbunopen_can2 bbunopen_can3 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 2335
+number of fluent variables = 991
+total number variables = 3326
+number clauses = 156991
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 12 steps
+time: 13, 147 facts and 649 exclusive pairs.
+455 new nodes added.
+
+####################################################
+goals at time 14:
+  arm-empty color_a_red color_b_blue color_c_green clean_brush1 
+bbunopen_can1 bbunopen_can2 bbunopen_can3 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 2577
+number of fluent variables = 1090
+total number variables = 3667
+number clauses = 172776
+Result is Sat
+Iteration was 0
+Performing plan justification:
+   0 actions were pruned in 0.00 seconds
+
+----------------------------------------------------
+Begin plan
+1 (remove-can-lid can3 blue)
+1 (remove-can-lid can2 green)
+1 (remove-can-lid can1 red)
+2 (pick-up brush1)
+3 (load-brush brush1 can2 green)
+4 (paint c green brush1)
+5 (wash-brush brush1 wb1 green)
+6 (load-brush brush1 can1 red)
+7 (paint a red brush1)
+8 (wash-brush brush1 wb1 red)
+9 (load-brush brush1 can3 blue)
+10 (paint b blue brush1)
+11 (wash-brush brush1 wb1 blue)
+12 (stack brush1 c)
+13 (replace-can-lid can2 green)
+13 (replace-can-lid can1 red)
+13 (replace-can-lid can3 blue)
+End plan
+----------------------------------------------------
+
+17 total actions in plan
+0 entries in hash table, 
+12 total set-creation steps (entries + hits + plan length - 1)
+0 actions tried
+
+####################################################
+Total elapsed time:   0.93 seconds
+Time in milliseconds: 933
+
+####################################################
